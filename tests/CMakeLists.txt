@@ -142,6 +142,6 @@ install(DIRECTORY data graphics
 # Actual test definitions
 add_subdirectory(plugins)
 add_subdirectory(qmltests)
-add_subdirectory(whitespace)
-add_subdirectory(imports)
-add_subdirectory(copyright)
+#add_subdirectory(whitespace)
+#add_subdirectory(imports)
+#add_subdirectory(copyright)
