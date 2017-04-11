@@ -63,12 +63,18 @@ ignore_pat="$ignore_pat|/Wizard/licenses/.*\\.html$"
 ignore_pat="$ignore_pat|\\.qrc$"
 # the doc devices.conf file
 ignore_pat="$ignore_pat|/doc/devices\\.conf$"
+# git files
+ignore_pat="$ignore_pat|/.git/"
+# README.md
+ignore_pat="$ignore_pat|/README.md"
 
 #
 # We don't use the -i option of licensecheck to add ignore_dir to the pattern because Jenkins creates directories
 # with names that contain regex meta-characters, such as "." and "+". Instead, if ingnore_dir is set, we post-filter
 # the output with grep -F, so we don't get false positives from licensecheck.
 #
+
+echo doggo
 
 [ $# -eq 2 ] && ignore_dir="$2"
 
