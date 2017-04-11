@@ -143,5 +143,5 @@ install(DIRECTORY data graphics
 add_subdirectory(plugins)
 add_subdirectory(qmltests)
 #add_subdirectory(whitespace)
-#add_subdirectory(imports)
+add_subdirectory(imports)
 add_subdirectory(copyright)
